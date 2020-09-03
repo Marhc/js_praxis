@@ -13,7 +13,6 @@
  *  - Object Literal Values;
  *  - Type Conversion;
  *  - Destructuring Assignment;
- *  - Set Intersection Operator (**'&'**);
  *  - Max built-in function;
  *  - Third-Party ***Math.js*** Library;
  *  - While loop;
