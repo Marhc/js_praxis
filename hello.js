@@ -1,7 +1,7 @@
 /**
  * A simple ***"Hello Function"*** for educational purposes.
  *
- * This module explores basic features of the Python programming language.
+ * This module explores basic features of the Javascript programming language.
  *
  * Features included in this module:
  *  - Console Output;
@@ -34,7 +34,7 @@ const { question } = require("readline-sync");
  * @alias module:hello.helloUser
  */
 function helloUser(name = "") {
-  return `Hello ${name || "World"}!`;
+  return `Hello ${name || "Everyone"}!`;
 }
 
 function custom_main(argv) {

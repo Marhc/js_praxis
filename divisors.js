@@ -14,6 +14,7 @@
  *  - Modulus / remainder operator (**'%'**);
  *  - Conditional Statements;
  *  - Array Filter;
+ *  - Array Join;
  *  - Literal notation for Arrays (***'Array literal values'***);
  *  - Single line and Multiline comments;
  *  - Docstrings (***jsdoc + markdown***);
@@ -58,8 +59,8 @@ if (!module.parent) {
 
   const inputNumber = parseInt(question("Type a integer number > 0: "));
 
-  console.log(`Divisors = [${divisors(inputNumber).join(", ")}]`);
-  console.log(`Divisors = [${divisorsList(inputNumber).join(", ")}]`);
+  console.log(`Divisors = { ${divisors(inputNumber).join(", ")} }`);
+  console.log(`Divisors = { ${divisorsList(inputNumber).join(", ")} }`);
 }
 
 // Named export: Exports many functions as an object.
