@@ -19,17 +19,13 @@
   },
   "homepage": "https://github.com/Marhc/js_praxis#readme",
   "dependencies": {
-    "docdash": "^1.2.0",
-    "jsdoc-rtd": "^1.0.15",
     "lodash": "^4.17.20",
     "mathjs": "^7.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "readline-sync": "^1.4.10",
     "sprintf-js": "^1.1.2"
   },
   "devDependencies": {
-    "better-docs": "^2.3.2",
-    "minami": "^1.2.3"
+    "docdash": "^1.2.0",
+    "jsdoc": "^3.6.5"
   }
 }
