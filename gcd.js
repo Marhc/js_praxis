@@ -9,6 +9,7 @@
  *  - String Interpolation with ***'Template Strings'***;
  *  - String Substitution with Third-Party ***Sprintf-js*** Library
  *  - String Padding;
+ *  - Tagged Templates;
  *  - Spread Operator (**'...'**);
  *  - Object Literal Values;
  *  - Type Conversion;
@@ -62,7 +63,7 @@ const firstNumber = parseInt(question("Type the first number: "));
 const secondNumber = parseInt(question("Type the second number: "));
 
 const factorsGcd = {
-  label: "GCD by factors".padEnd(14),
+  label: "GCD by factors",
   value: gcdFactors(firstNumber, secondNumber),
 };
 
@@ -73,8 +74,20 @@ const euclidianGcd = [
 
 const mathGcd = ["GCD by Math.js", gcd(firstNumber, secondNumber)];
 
+/**
+ * Tagged Template to pad gcd out in the right way.
+ * 
+ * @param {null} _ The formatted mask strings
+ * @param  {...any} args The interpolated values
+ * @returns {string} The padding output
+ */
+const fgcd = (_, ...args) => `${args[0].padEnd(14)}: ${args[1]}`
+
 // New Style with Template Strings
-console.log(`\n${factorsGcd.label}: ${factorsGcd.value}`);
+console.log(`\n${factorsGcd.label.padEnd(14)}: ${factorsGcd.value}`);
+
+// Enhanced New Style with Tagged Templates
+console.log(fgcd`${factorsGcd.label}: ${factorsGcd.value}`);
 
 // Console.log emulating printf
 console.log("%s: %d", ...euclidianGcd);
