@@ -59,6 +59,15 @@ function gcdEuclidian(num1, num2) {
   return num1;
 }
 
+/**
+ * Tagged Template to pad gcd out in the right way.
+ *
+ * @param {null} _ The formatted mask strings
+ * @param  {...any} args The interpolated values
+ * @returns {string} The padding output
+ */
+const fgcd = (_, ...args) => `${args[0].padEnd(14)}: ${args[1]}`;
+
 const firstNumber = parseInt(question("Type the first number: "));
 const secondNumber = parseInt(question("Type the second number: "));
 
@@ -73,15 +82,6 @@ const euclidianGcd = [
 ];
 
 const mathGcd = ["GCD by Math.js", gcd(firstNumber, secondNumber)];
-
-/**
- * Tagged Template to pad gcd out in the right way.
- * 
- * @param {null} _ The formatted mask strings
- * @param  {...any} args The interpolated values
- * @returns {string} The padding output
- */
-const fgcd = (_, ...args) => `${args[0].padEnd(14)}: ${args[1]}`
 
 // New Style with Template Strings
 console.log(`\n${factorsGcd.label.padEnd(14)}: ${factorsGcd.value}`);
